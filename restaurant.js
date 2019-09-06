@@ -1,7 +1,7 @@
-fetch("http://kea-alt-del.dk/t5/api/categories")
-        .then(function(response) {
+    fetch("http://kea-alt-del.dk/t5/api/categories")
+        .then(function (response) {
             return response.json()
-        }).then(function(data) {
+        }).then(function (data) {
             data.forEach(buildCategory)
             getProducts();
         })
@@ -20,16 +20,11 @@ fetch("http://kea-alt-del.dk/t5/api/categories")
 
 
 
-
-
-
-
-
     function getProducts() {
         fetch("http://kea-alt-del.dk/t5/api/productlist")
-            .then(function(response) {
+            .then(function (response) {
                 return response.json()
-            }).then(function(data) {
+            }).then(function (data) {
                 data.forEach(showDish)
             })
     }
@@ -62,15 +57,17 @@ fetch("http://kea-alt-del.dk/t5/api/categories")
 
         if (dish.vegetarian === true) {
             copy.querySelector(".V").classList.remove("V");
-        } else {
-        }
+        } else {}
 
-         if (dish.alcohol > 0) {
+        if (dish.alcohol > 0) {
             copy.querySelector(".A").classList.remove("A");
-        } else {
-        }
+        } else {}
 
 
+        if (dish.soldout === true) {
+            console.log("TRUE");
+            copy.querySelector(".X").classList.remove("X");
+        }else{}
 
 
 
@@ -82,11 +79,6 @@ fetch("http://kea-alt-del.dk/t5/api/categories")
 
             menuScroll.classList.add('menucolor');
         }
-
-
-
-
-
 
 
 

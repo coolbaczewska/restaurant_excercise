@@ -41,38 +41,33 @@ main {
     font-family: 'Arvo', serif;
 }
 
-.newPrice{
-    display:inline-flex;
+.newPrice {
+    display: inline-flex;
 }
 
-.price{
+.price {
     margin-right: 6px;
 }
 
-.markDiscount{
+.markDiscount {
     opacity: 0.20;
 }
 
-.V{
-display: none;
-}
-
-.A{
-   display: none;
-}
-
-.X{
+.V {
     display: none;
 }
-section{
-    margin-top: 110px;
+
+.A {
+    display: none;
 }
 
+.X {
+    display: none;
+}
 
-
-
-
-
+section {
+    margin-top: 110px;
+}
 
 #sticky {
     position: sticky;
@@ -88,84 +83,66 @@ section{
     width: 50%;
 }
 
-.menucolor{
+.menucolor {
     animation: colorchange 12s infinite alternate;
 }
 
-@keyframes colorchange{
+@keyframes colorchange {
     0% {
 
         color: blue;
-      }
+    }
 
-      10% {
+    10% {
 
         color: #8e44ad;
-      }
+    }
 
-      20% {
+    20% {
 
         color: #1abc9c;
-      }
+    }
 
-      30% {
+    30% {
 
         color: #d35400;
-      }
+    }
 
-      40% {
+    40% {
 
         color: blue;
-      }
+    }
 
-      50% {
+    50% {
 
         color: #34495e;
-      }
+    }
 
-      60% {
+    60% {
 
         color: blue;
-      }
+    }
 
-      70% {
+    70% {
 
         color: #2980b9;
-      }
-      80% {
+    }
+
+    80% {
 
         color: #f1c40f;
-      }
+    }
 
-      90% {
+    90% {
 
         color: #2980b9;
-      }
+    }
 
-      100% {
+    100% {
 
         color: pink;
-      }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 1200px) {
@@ -178,17 +155,8 @@ section{
 
 
 
+    #more {
+        display: none;
+    }
 
-
-
-
-
-
-#more{
-    display: none;
 }
-
-
-
-
-
